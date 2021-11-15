@@ -89,7 +89,14 @@ Usage :
 ```
 
 #### Change Default User(id command required)
+
+The following is an example of adding a user to the "users" and "wheel" groups and setting it as the default user
+
+_Note: Replace `user` with your chosen user name._
+
 ```cmd
+>Fedora.exe run useradd -m -g users -G wheel -s /bin/bash user
+
 >Fedora.exe config --default-user user
 
 >Fedora.exe
