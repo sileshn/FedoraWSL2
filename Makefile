@@ -45,7 +45,7 @@ rootfs: base.tar
 
 base.tar:
 	@echo -e '\e[1;31mExporting base.tar using docker...\e[m'
-	docker run --name fedorawsl fedora:rawhide /bin/bash -c "dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-rawhide.noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-rawhide.noarch.rpm; dnf update -y; dnf install -y --allowerasing bsdtar cracklib-dicts curl dnf-plugins-core dwarves figlet iputils lolcat nano neofetch passwd pinentry pinentry-tty rsync sudo wget zip ; dnf clean all; pwconv; grpconv; chmod 0744 /etc/shadow; chmod 0744 /etc/gshadow; dnf config-manager --set-disabled fedora-cisco-openh264;"
+	docker run --name fedorawsl fedora:rawhide /bin/bash -c "dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-rawhide.noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-rawhide.noarch.rpm; dnf update -y; dnf install -y --allowerasing bsdtar cracklib-dicts curl dnf-plugins-core dwarves figlet iputils lolcat nano neofetch passwd pinentry pinentry-tty rsync sudo wget which zip ; dnf clean all; pwconv; grpconv; chmod 0744 /etc/shadow; chmod 0744 /etc/gshadow; dnf config-manager --set-disabled fedora-cisco-openh264;"
 	docker export --output=base.tar fedorawsl
 	docker rm -f fedorawsl
 
