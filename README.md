@@ -8,7 +8,7 @@ Fedora rawhide on WSL2 (Windows 10 FCU or later) based on [wsldl](https://github
 [![Screenshot-2023-04-11-114235.png](https://i.postimg.cc/YCs4DwY4/Screenshot-2023-04-11-114235.png)](https://postimg.cc/5X8NjTP1)
 [![Github All Releases](https://img.shields.io/github/downloads/sileshn/FedoraWSL2/total.svg?style=flat-square)](https://github.com/sileshn/FedoraWSL2/releases)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![License](https://img.shields.io/github/license/sileshn/FedoraWSL2.svg?style=flat-square)](https://raw.githubusercontent.com/sileshn/FedoraWSL2/main/LICENSE)
+[![License](https://img.shields.io/github/license/sileshn/FedoraWSL2.svg?style=flat-square)](https://raw.githubusercontent.com/sileshn/FedoraWSL2/master/LICENSE?token=GHSAT0AAAAAACA2QMWW7BDABA5NM5RE3ADYZBXNQ5A)
 
 ## Features and important information
 FedoraWSL2 has the following features during the installation stage.
